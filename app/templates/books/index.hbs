@@ -1,0 +1,8 @@
+{{#book-search filter=(action "filterByTitle") as |filteredResults| }}
+<ul class="results">
+  {{#each filteredResults as |bookUnit|}}
+  <li>{{book-listing book=bookUnit}}</li>
+  {{/each}}
+</ul>
+{{/book-search}} 
+{{outlet}}

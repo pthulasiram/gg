@@ -1,0 +1,32 @@
+<div class="jumbo show-listing">
+    <h2 class="title">{{model.title}}</h2>
+    <div class="content">
+        <div>
+            <img src={{model.image_url}} class="rental-pic" alt="Picture of {{model.title}}">
+        </div>
+        <div class="detail-section">
+            <div class="detail owner">
+                <strong>Author:</strong> {{model.author}}
+            </div>
+            <div class="detail owner">
+                <strong>Publication:</strong> {{model.publisher}}
+            </div>
+            <div class="detail">
+                <strong>Category:</strong> {{model.topic}}
+            </div>
+            <div class="detail">
+                <strong>year:</strong> {{model.year}}
+            </div>
+            <div class="detail">
+                <strong>Number of Pages:</strong> {{model.pages}}
+            </div>
+            <div class="description">
+                <strong>Language:</strong> <p>{{model.language}}</p>
+            </div>
+            <div class="detail owner">
+                <a href={{model.download}} target="_blank"><strong>Download </strong></a>
+            </div>
+        </div>
+    </div>
+
+</div>

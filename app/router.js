@@ -7,6 +7,13 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('about');
+  this.route('contact');
+  this.route('dmca');
+  this.route('books', function() {
+    this.route('new');
+    this.route('show',{path:'/:title_id'});
+  });
 });
 
 export default Router;
